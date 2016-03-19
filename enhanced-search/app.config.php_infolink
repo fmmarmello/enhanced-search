@@ -1,0 +1,105 @@
+<?php
+
+	/*
+	* @config app_config
+	* array de configuração geral para a aplicação
+	*/
+	
+	$_app_config = [
+
+		/*
+		* @config prod
+		* dados que serão utilizados quando a aplicação subir para produção 
+		*/
+	
+		"prod" => [
+			"Cliente" 			=> "Sawala Imóveis",
+			"state" 			=> "production",
+			"debug"				=> true,
+			"salt" 				=> "@InforceImoveisSawala",
+			"base"				=> "http://sawala.temp.w3br.com/",
+			"base_url" 			=> "http://sawala.temp.w3br.com/web/",
+			"HOST_EXTRANET" 	=> NULL,
+			"HOST_ADMIN" 		=> "http://sawala.inforcedados.com.br/",
+			"HOST_ADMIN_IMV" 	=> "http://sawala.inforcecode.com.br/",
+			"HOST_ROUTE" 		=> $_SERVER['REQUEST_URI'],
+			"galeria_imagem" 	=> "_custom/galeria_imagem/",
+			
+			/*
+			* @config mail
+			* configuração relacionada a autenticação de e-mail
+			*/
+			
+			"mail" => [
+					    "host" 			=> "smtp.office365.com",
+					    "port" 			=> 587,
+					    "username" 		=> "atendimento@inforce.com.br",
+					    "password" 		=> "abra@1020",
+					    "encryption" 	=> "tls",
+					    "auth_mode" 	=> null
+			],
+			
+			/*
+			* @config database
+			* configuração relacionada ao banco de dados
+			*/
+
+			/*"db" 	=> [
+					    "path" => "inforce10",
+			            "host" => "186.202.152.93",
+			            "user" => "inforce10",
+			            "pass" => "vale@1231"
+			]*/
+			"db" 		=> array(
+					    "path" => "sawala",
+			            "host" => "192.168.0.6:3306",
+			            "user" => "sawala",
+			            "pass" => "brau@1238"
+			)
+		],
+
+		/*
+		* @config dev
+		* dados que serão utilizados enquanto a aplicação estiver em desenvolvimento 
+		*/
+
+		"dev" => [
+			"Cliente"			=> "Grupo Avanço Aliados",
+			"state" 			=> "development",
+			"debug" 			=> true,
+			"salt"  			=> "@InforceWebApp",
+			"base_url" 			=> "http://walkerengenharia.temp.w3br.com/web/",
+			"base" 				=> "http://walkerengenharia.temp.w3br.com/",
+			"HOST_EXTRANET" 	=> NULL,
+			"HOST_ADMIN" 		=> "http://www.walker.inforcedata.com.br/",
+			"HOST_ROUTE" 		=> $_SERVER['REQUEST_URI'],
+			"galeria_imagem" 	=> "_custom/galeria_imagem/",
+			
+			/*
+			* @config mail
+			* configuração relacionada a autenticação de e-mail
+			*/
+
+			"mail"	=> [
+					    "host" 			=> "smtp.office365.com",
+					    "port" 			=> 587,
+					    "username" 		=> "atendimento@inforce.com.br",
+					    "password" 		=> "abra@1020",
+					    "encryption" 	=> "tls",
+					    "auth_mode" 	=> null
+			],
+			
+			/*
+			* @config database
+			* configuração relacionada ao banco de dados
+			*/
+
+			"db" 		=> [
+					    "path" => "pimoradaimovei1",
+					    "host" => "mysql02.pimoradaimoveismg.hospedagemdesites.ws",
+					    "user" => "pimoradaimovei1",
+					    "pass" => "sdfl@6548"
+
+			]
+		]
+	];

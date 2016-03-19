@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	font-family:Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#70706f;
+	background: #aa1318;
+}
+img a, a img, a{border:none; text-decoration:none;}
+a .item_carousel, .item_carousel a{text-decoration:none;}
+#bg{
+
+	min-width:100%;
+	height:808px;
+	background:url(../images/frames/bg_1.jpg) no-repeat;
+	background-position:top;
+/*	transition:all 1.5s ease;*/
+}
+
+.clear{
+	clear: both; 
+	float: none;
+}
+
+.btn:hover{
+	opacity: 0.5; 
+	transition: .25;
+}
+
+
+.formulario_principal{
+  width: 410px;
+  height: 160px;
+  position: relative;
+  top: -5px;
+  left: 65px;
+
+}
+.conteudo{
+	width:960px;
+	height:790px;
+	margin:0 auto;
+	position:relative;
+}
+
+.middle{
+	background: url(../images/frames/bg_middle.png) no-repeat;
+	width: 538px;
+	height: 803px; 
+	float: right;
+}
+
+.texto{
+    background: url(../images/frames/texto.png) no-repeat;
+    width: 455px;
+    height: 548px;
+    margin: 65px 35px 0px 48px;
+}
+
+.casal{
+    background: url(../images/frames/familia.png) no-repeat;
+    width: 602px;
+    height: 630px;
+    position: absolute;
+    top: 173px;
+    left: -180px;
+}
+
+.cadastre-se{
+	background: url(../images/cadastre-se.png);
+	width: 341px;
+	height: 46px;
+	margin-top: 100px;
+  	margin-left: 70px;
+}
+
+.telefone_especial{
+	width: 270px !important;
+}
+
+.logo{
+	background: url(../images/logo.jpg) no-repeat;
+	width: 181px;
+	height: 70px;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	position: relative;
+	margin-top: 171px;
+
+}
+.bt_enviar{
+	background:url(../images/cadastrar.png) no-repeat;
+	width:122px;
+	height:42px;
+	display:block;
+	cursor:pointer;
+	border:none;
+	float: right;
+}
+
+.bt_enviar:hover{
+	background-position: 0 -42px;
+}
+
+
+#formulario{
+	background:url(../images/bg_formulario.png) no-repeat;
+	width: 661px;
+	height: 390px;
+	position:relative;
+}
+#formulario a{
+	text-align:center;
+	color: #1d4f6c;
+	text-decoration:none;
+}
+h1{
+	margin: 0;
+	color: #aa1318;
+	font-size: 27px;
+	font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+#formulario div.label, .bg_form div.label{
+	font-family:Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color: #383a3c;
+	padding: 2px 10px 0 0;
+	width: 80px;
+	float: left;
+	text-align: right;
+}
+
+#form{
+	position:relative;
+	top: 141px;
+	left: 296px;
+	color:#383a3c;
+	height:176px;
+	width:331px;
+}
+.campoForm{margin:3px 0 0 0;}
+
+input[type="text"], input[type="email"]{
+	width: 400px;
+	height: 37px;
+	background: #FFFFFF;
+	font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #383a3c;
+	border: 1px solid #adadad;
+	margin-bottom: 8px;
+	padding-left: 11px;
+	color: #adadad;
+}
+
+.bt_voltar{
+	background:url(../images/bt_voltar.png) no-repeat;
+	width:103px;
+	height:23px;
+	display:block;
+	position: absolute;
+	bottom: 11px;
+	left: 330px;
+}
+.bt_voltar:hover{opacity:0.8; filter:alpha(opacity=80);}
+
+
+.politica{
+	font-size: 12px;
+	color: #383a3c;
+	text-align: center;
+	text-decoration: none;
+	color: #adadad;
+	font-family: Calibri;
+	font-size: 10px;
+}
+
+.corretor-online{
+    background: url(../images/frames/bt_corretor_online.png);
+    width: 204px;
+    height: 91px;
+    position: absolute;
+    right: -195px;
+    top: 160px;
+    cursor: pointer;
+}
+
+#check_nov{float:left;}
+
+.label_check{
+	float: left; 
+	margin: -4px 0 0 -4px;
+}
+
+.novidade{
+  width: 266px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 3px;
+  color: #adadad; 
+}
+
+#form_{height:165px;}
+
+
+
+/*		FOOTER		*/
+
+
+/*	RETORNO	*/
+.bg_retorno{
+	background:url(../images/bg_retorno.jpg) no-repeat;
+	width:100%;
+	height:840px;
+	position:relative;
+}
+.content_retorno{
+	background:url(../images/bg_retorno_msg.jpg) no-repeat;
+	width:878px;
+	height:691px;
+	margin:0 auto;
+	top:160px;
+	position:relative;
+}
+.content_email{
+	width:530px;
+	height:67px;
+	padding:176px 0 0 46px;
+	text-align:center;
+	color:#272625;
+	font-size:22px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.content_info, .content_obs{
+	width: 551px;
+	height: auto;
+	clear: both;
+	color: #272625;
+	font-size: 19px;
+	font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 36px;
+}
+.content_obs{font-size:12px;}
+.bt_fale_agora{
+	background:url(../images/bt_fale_agora.png) no-repeat;
+	width:383px;
+	height:80px;
+	display:block;
+	margin:52px 0 0 122px;
+}
+.bt_fale_agora:hover{background-position:0 -79px;}
+
+
+/*	corretor*/
+
+.container_acaolateral {
+	position:fixed;
+	width:391px;
+	height:325px;
+	right:-327px;
+	top:30%;
+	z-index:999999;
+}
+
+.bt_acaolateral {
+	background:url(../images/bt_acaolateral.png) no-repeat;
+	width:64px;
+	height:192px;
+	float:left;
+	margin-top:114px;
+}
+.bt_acaolateral:hover {
+	cursor:pointer;
+}
+.content_acao_lateral {
+	background:url(../images/corpo_acaolateral.png) no-repeat;
+	width:327px;
+	height:325px;
+	float:right;
+	position:relative;
+}
+.formulario_acaolateral {
+	width: 222px;
+	height: 135px;
+	position: relative;
+	top: 130px;
+	left: 59px;
+}
+.formulario_acaolateral h3 {
+	font-size:21px;
+	text-align:center;
+	color:#fff;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.formulario_acaolateral input[type="text"] {
+	width:200px;
+	height:21px;
+	border:1px solid #ce2023;
+	font-size:11px;
+	color:#8d8d8d;
+	margin-bottom:7px;
+}
+#tel_acao {
+	width:128px;
+	float:left;
+}
+#bt_enviar_acao {
+	background:url(../images/bt_iniciar.jpg) no-repeat;
+	width:66px;
+	height:25px;
+	display:block;
+	border:none;
+	float:left;
+	margin-left:5px;
+}
+#bt_enviar_acao:hover {
+	background-position:0 -25px;
+	cursor:pointer;
+}
+.telefone_acaolateral {
+	clear:both;
+	position:absolute;
+	bottom: 9px;
+	left: 62px;
+}
+.telefone_acaolateral h3 {
+	color:#fff;
+	font-size:19px;
+	margin:0;
+}
+
+
+/*	BARRA	*/
+.bg_barra{
+	width:100%;
+	height:42px;
+	background:#d41012;
+	position:absolute;
+	top:0;
+	z-index: 9;
+}
+.content_barra{
+	width:960px;
+	height:40px;
+	margin:0 auto;
+	position: relative;
+	top: 4px;
+}
+.bts_barra{
+	width:710px;
+	height:33px;
+	float:right;
+	margin-top: 3px;
+}
+.bts_barra .txt_barr{
+	font-family:Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	text-transform:uppercase;
+	float:right;
+}
+.bt_atendimento_barra{
+	background:url(../images/bt_atendimento.png) no-repeat;
+	width:120px;
+	height:28px;
+	display:block;
+	float:left;
+}
+.bt_atendimento_barra:hover{background-position:0 -29px;}
+.bt_website_barra{
+	background:url(../images/bt_website.png) no-repeat;
+	width:106px;
+	height:24px;
+	float:left;
+	display:block;
+}
+.bt_website_barra:hover{background-position:0 -24px;}
+#organizar3 {
+	background: url(../../../img/template/busca/bg_select3.jpg) no-repeat;
+	width: 306px;
+	height: 25px;
+	cursor: pointer;
+	position:relative;
+	font-size:12px;
+	
+}
+#outros-empreendimentos:hover {cursor:pointer;}
+
+/*Animações CSS*/
+
+@keyframes walkingAround{
+	0% { right: -140px;}
+	25% {right: -138px;}
+	50% {right: -136px;}
+	75% {right: -134px;}
+	100%{right: -132px;}
+}
+
+
+/* SELO */
+
+.selo {
+	background: url('../images/selo.png'); 
+	width: 207px;
+	height: 225px; 
+	position: absolute;
+	top: 80px;
+    left: 240px;
+}
+

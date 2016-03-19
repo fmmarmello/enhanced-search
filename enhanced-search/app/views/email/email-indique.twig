@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+		<div style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#333; margin:0; padding:0">
+			<b style="font-size:14px">Indique a um amigo</b><br><br>
+			Olá {{nome_amigo|convert_encoding('UTF-8','iso-8859-1')}}, seu amigo(a) {{nome|convert_encoding('UTF-8','iso-8859-1')}} lhe indicou o imóvel <b>{{tokenAdr}}</b> da <b>{{Config.Cliente}}</b>. <br><br>
+			<a href="{{Config.base_url}}{{tokenAdr}}">Clique aqui</a> e confira este imóvel ou visite nosso site em {{Config.base_url}}.<br>
+			<br>
+			<b>Nome: </b>{{nome_amigo|convert_encoding('UTF-8','iso-8859-1')}}<br>
+			<b>Email: </b>{{email_amigo}}<br>
+			<br>
+			<br>
+			Confira! <a href="{{Config.base_url}}{{tokenAdr}}">{{tokenAdr}}</a>
+			<hr>
+			<i>Mensagem enviada pelo site <a href="{{Config.base_url}}" target="_blank">{{Config.base_url}}</a><br>
+			<font color="#CCCCCC">{{user_agent}} | IP:{{user_ip}}
+			<br>Data do Envio: {{sent_date}}</font></i>
+		</div>
+	</body>
+
+</html>
