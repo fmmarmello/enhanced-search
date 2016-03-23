@@ -30,43 +30,13 @@
 			* configuração relacionada a autenticação de e-mail
 			*/
 			
-			"mail" => array(
-					    "host" 			=> "localhost",
-					    "port" 			=> 25,
-					    "username" 		=> "atendimento@novaepoca.com.br",
-					    "password" 		=> "nbmi@5920",
-					    "encryption" 	=> "tls",
-					    "auth_mode" 	=> null
-			),
-			/*"mail" => array(
-					    "host" 			=> "smtp.gmail.com",
-					    "port" 			=> 465,
-					    "username" 		=> "webmaster@novaepoca.com.br",
-					    "password" 		=> "fasd%$as",
-					    "encryption" 	=> "ssl",
-					    "auth_mode" 	=> null
-			),*/
+		
 			
 			/*
 			* @config database
 			* configuração relacionada ao banco de dados
 			*/
 
-			//locaweb
-			/*"db" 	=> array(
-					    "path" => "novaepocaded",
-			            "host" => "177.153.16.119",
-			            "user" => "novaepocaded",
-			            "pass" => "Avma7120"
-			),*/
-			"db" 	=> array(
-					    "path" => "novaepoca",
-			            #"host" => "192.168.0.6",
-			            "host" => "cloud482.hospedagem.w3br.com",
-			            "user" => "novaepoca",
-			            #"pass" => "nova@7142"
-			            "pass" => "LKE5bTtEYNcmcE6p"
-			),
 		
 
 			/*
@@ -120,25 +90,12 @@
 			* configuração relacionada a autenticação de e-mail
 			*/
 
-			"mail"	=> array(
-					    "host" 			=> "smtp.office365.com",
-					    "port" 			=> 587,
-					    "username" 		=> "atendimento@inforce.com.br",
-					    "password" 		=> "abra@1020",
-					    "encryption" 	=> "tls",
-					    "auth_mode" 	=> null
-			),
-			
+		
 			/*
 			* @config database
 			* configuração relacionada ao banco de dados
 			*/
 
-			"db" 	=> array(
-					    "path" => "novaepocaded",
-			            "host" => "177.153.16.119",
-			            "user" => "novaepocaded ",
-			            "pass" => "Avma0217"
-			),
+		
 		)
 	);
