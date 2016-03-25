@@ -12,8 +12,8 @@
         <input name="cidade" value="" type="hidden">
         <input name="bairro" value="" type="hidden">
         <input name="filtroNome" value="" type="hidden">
-        
-        <!-- OBRIGATORIO --> 
+
+        <!-- OBRIGATORIO -->
         <div class="banner_search">
           <div class="banner_search_left">
             <p>Podemos te ajudar!</p>
@@ -26,9 +26,6 @@
                   <p>O que você está procurando?</p>
                     <a data-product="imovel" data-fin="prontos" class="bt_finalidade left-finalidade active2">Comprar</a>
                     <a data-product="imovel" data-fin="locacao" class="bt_finalidade right-finalidade" >Alugar</a>
-                    
-                  <!-- <a  class="actv">Comprar</a>
-                  <a >Alugar</a> -->
                 </span>
               </li>
 
@@ -47,7 +44,6 @@
                         {% if natureza != entry.naturezanome  %}
                             </optgroup>
                         {% endif %}
-
                     {% endfor %}
                   </select>
                 </span>
@@ -58,8 +54,17 @@
                 <span class="banner_search_Box1 produto-tipo assoc-locacao">
                   <p>Tipo do Imóvel</p>
                   <select name="tipos_prontos" class="select-filtro-lateral form-control">
+                    {% set natureza = "" %}
                     {% for entry in selectLocacao %}
-                    <option value="{{entry.id}}" {% if loop.index0 == 1 %} selected {% endif %}>{{entry.nome}}</option>
+                    {% if natureza != entry.naturezanome %}
+                    <optgroup label="{{entry.naturezanome}}">
+                      {% endif %}
+                      <option id="{{entry.id}}" url="{{entry.tipo_natureza}}" {% if loop.index0 == 0 %} selected {% endif %}>{{entry.tiponome}}</option>
+                      {% set natureza = entry.naturezanome  %}
+                      {% if natureza != entry.naturezanome  %}
+                    </optgroup>
+                    {% endif %}
+
                     {% endfor %}
                   </select>
                 </span>

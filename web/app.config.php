@@ -14,8 +14,8 @@
 			"state" 			=> "production",
 			"debug"				=> true,
 			"salt" 				=> "@InforceImoveisNE",
-			"base"				=> "http://localhost/enhanced-search/",
-			"base_url" 			=> "http://localhost/enhanced-search/web/",
+			"base"				=> "http://dev.novaepoca.com.br/",
+			"base_url" 			=> "http://dev.novaepoca.com.br/web/",
 			"HOST_EXTRANET" 	=> NULL,
 			"ImagePath"			=> "http://novaepoca.inforcedata.com.br/galeriaimagem/imagem/open/",
 			"ImageEXT"			=> "tipo=&",
@@ -29,14 +29,26 @@
 			* @config mail
 			* configuração relacionada a autenticação de e-mail
 			*/
-			
-		
+
+			"mail" => array(
+				"host" 			=> "localhost",
+				"port" 			=> 25,
+				"username" 		=> "noreply@sitemestre.com.br",
+				"password" 		=> "scN?g733",
+				"encryption" 	=> "tls",
+				"auth_mode" 	=> null
+			),
 			
 			/*
 			* @config database
 			* configuração relacionada ao banco de dados
 			*/
-
+			"db" 	=> array(
+				"path" => "novaepoca",
+				"host" => "cloud482.hospedagem.w3br.com",
+				"user" => "novaepoca",
+				"pass" => "LKE5bTtEYNcmcE6p"
+			),
 		
 
 			/*

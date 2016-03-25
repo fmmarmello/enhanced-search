@@ -105,13 +105,13 @@
 		    $twig->addGlobal('MenuAuxiliar', Controller\Pagina::buildMenu(2));
 
 		    // forms da busca 
-		    $twig->addGlobal('selectProntos', Model\Imovel::findTipos() );		    
+		    $twig->addGlobal('selectProntos', Model\Imovel::findTipos('prontos') );
 		    $twig->addGlobal('selectImovelQuartos', Model\Imovel::findQuartos() );
 		    $twig->addGlobal('selectProntosValores', Model\Imovel::findValores() );
 		    $twig->addGlobal('selectProntosCidades', Model\Imovel::findCidades('prontos') );
 		    $twig->addGlobal('selectProntosBairros', Model\Imovel::findBairros('prontos') );
 
-		    $twig->addGlobal('selectLocacao', Model\Imovel::findTiposLocacao() );
+		    $twig->addGlobal('selectLocacao', Model\Imovel::findTipos('locacao') );
 		    $twig->addGlobal('selectLocacaoValores', Model\Imovel::findValores('locacao') );
 		    $twig->addGlobal('selectLocacaoCidades', Model\Imovel::findCidades('locacao') );
 		    $twig->addGlobal('selectLocacaoBairros', Model\Imovel::findBairros('locacao') );

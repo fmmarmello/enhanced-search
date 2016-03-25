@@ -1,0 +1,17 @@
+{
+  "require": {
+    "silex/silex": "*",
+    "swiftmailer/swiftmailer": "*",
+    "twig/twig": "*",
+    "php-activerecord/php-activerecord": "*",
+    "ruckuus/php-activerecord-service-provider": "*",
+    "monolog/monolog": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lib\\": "web/app/controller/",
+      "Controller\\": "web/app/controller/",
+      "Model\\": "web/app/model/"
+    }
+  }
+}
